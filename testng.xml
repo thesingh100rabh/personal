@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test" parallel="classes">
+	  <groups>
+		  <run>
+			  <exclude name="smoke"></exclude>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="Bike.Honda"/>
+      <class name="Shoes.Adidas"/>
+      <class name="Shoes.BATA"/>
+      <class name="Bike.Kawasaki"/>
+      <class name="Bike.KTM"/>
+      <class name="Shoes.Reebok"/>
+      <class name="Shoes.WOODLAND"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
